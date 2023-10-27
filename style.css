@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(77, 196, 184);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.panel {
+  height: 80%;
+  overflow: hidden;
+  border-radius: 3%;
+  width: 80%;
+  background-color: rgb(6, 123, 121);
+}
+.ptop {
+  height: 100px;
+  width: 100%;
+  background-color: rgb(235, 237, 238);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+.elem {
+  height: 10%;
+  width: 10%;
+
+  display: flex;
+  color: rgb(45, 66, 64);
+  align-items: center;
+  justify-content: space-between;
+}
+.box1 {
+  background-color: rgb(77, 196, 184);
+  margin: 10px 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 25px;
+  color: black;
+}
+.pbot {
+  overflow: hidden;
+  margin-left: 10px;
+  width: 100%;
+  height: calc(100% - 100px);
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes bubbleFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.bubble {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgb(77, 196, 184);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: bubbleFadeIn 0.5s ease-in-out;
+}
+.bubble:hover {
+  cursor: pointer;
+  background-color: rgb(44, 231, 219);
+}
